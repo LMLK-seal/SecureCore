@@ -1,3 +1,11 @@
+"""
+SecureCore - Military-grade folder encryption with auto-destruct capabilities.
+
+Author: LMLK-seal
+License: MIT
+Version: 1.3.1
+"""
+
 import customtkinter as ctk
 import tkinter as tk
 from tkinter import filedialog, messagebox
