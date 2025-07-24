@@ -43,23 +43,7 @@ SecureCore is a professional-grade folder security application that provides mil
 ## 📸 Screenshots
 
 ### Main Interface
-```
-🔒 Advanced Folder Security System
-Military-grade encryption with auto-destruct capabilities
-
-┌────────────────────────────────────────────┐
-│ 📁 Select Folder to Secure:                │
-│ [Folder Path....................] [Browse] │
-└────────────────────────────────────────────┘
-
-┌────────────────────────────────────────────┐
-│ 🔐 Security Settings:                      │
-│ Password: [••••••••••••••••••] ☐ Show      │
-│ ☐ Enable Auto-Destruct Timer               │
-└────────────────────────────────────────────┘
-
-[🔒 Encrypt & Secure Folder] [🔓 Decrypt & Access Folder]
-```
+![SecureCore Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Preview.jpg?raw=true)
 
 ---
 
