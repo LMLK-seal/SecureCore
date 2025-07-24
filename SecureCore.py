@@ -3,7 +3,7 @@ SecureCore - Military-grade folder encryption with auto-destruct capabilities.
 
 Author: LMLK-seal
 License: MIT
-Version: 1.3.1
+Version: 1.0.0
 """
 
 import customtkinter as ctk
