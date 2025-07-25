@@ -6,6 +6,8 @@
 [![Security](https://img.shields.io/badge/encryption-AES--256-green.svg)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 [![GUI](https://img.shields.io/badge/GUI-CustomTkinter-orange.svg)](https://github.com/TomSchimansky/CustomTkinter)
 
+![SecureCore Main Interface]([jjj](https://github.com/LMLK-seal/SecureCore/blob/main/SecureCoreLogo.png?raw=true))
+
 > **Military-grade folder encryption with auto-destruct capabilities**
 
 SecureCore is a professional-grade folder security application that provides military-standard AES-256 encryption combined with Gutmann secure deletion methods. Designed for users who require the highest level of data protection with user-friendly operation.
