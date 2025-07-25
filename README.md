@@ -67,7 +67,7 @@ Windows Operating System
 
 2. **Install dependencies:**
    ```bash
-   pip install -r requirements.txt
+   install customtkinter cryptography
    ```
 
 3. **Run SecureCore:**
