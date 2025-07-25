@@ -6,7 +6,7 @@
 [![Security](https://img.shields.io/badge/encryption-AES--256-green.svg)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 [![GUI](https://img.shields.io/badge/GUI-CustomTkinter-orange.svg)](https://github.com/TomSchimansky/CustomTkinter)
 
-![SecureCore Main Interface]([jjj](https://github.com/LMLK-seal/SecureCore/blob/main/SecureCoreLogo.png?raw=true))
+![SecureCoreLogo](https://github.com/LMLK-seal/SecureCore/blob/main/SecureCoreLogo.png?raw=true)
 
 > **Military-grade folder encryption with auto-destruct capabilities**
 
