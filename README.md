@@ -40,9 +40,9 @@ SecureCore is a professional-grade folder security application that provides mil
 - **Real-time status monitoring** and logging
 - **Password visibility controls** for secure entry
 
-## 🔐 SecureCore - Advanced version System
+## 🔐 SecureCore - Enhanced version System
 <details>
-<summary>Advanced version System</summary>
+<summary>Enhanced version System</summary>
 
 ## 🛡️ Security Profiles & Cipher Recommendations
 
@@ -203,7 +203,7 @@ argon2-cffi>=23.1.0
 ## 📸 Screenshots
 
 <details>
-<summary>🖼️ SecureCore Simple version</summary>
+<summary>🖼️ SecureCore</summary>
 
 ### Simple Main Interface
 ![Simple Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Preview.jpg?raw=true)
@@ -211,15 +211,15 @@ argon2-cffi>=23.1.0
 </details>
 
 <details>
-<summary>🖼️ SecureCore Advanced versio</summary>
+<summary>🖼️ SecureCore Enhanced version</summary>
 
-### Advanced Main Interface
-![Advanced Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Advanced_version_example.png?raw=true)
+### Enhanced Main Interface
+![Enhanced Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Advanced_version_example.png?raw=true)
 
 </details>
 
 
-## 🖼️ SecureCore simple version
+## 🖼️ SecureCore
 ## 🚀 Quick Start
 
 ### Prerequisites
