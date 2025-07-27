@@ -43,9 +43,6 @@ SecureCore is a professional-grade folder security application that provides mil
 ## 🔐 SecureCore - Advanced version System
 <details>
 <summary>Advanced version System</summary>
-## Advanced version System
-
-Military-grade multi-cipher encryption with integrity verification and advanced security features.
 
 ## 🛡️ Security Profiles & Cipher Recommendations
 
@@ -208,13 +205,13 @@ argon2-cffi>=23.1.0
 <details>
 <summary>🖼️ SecureCore simple version</summary>
 ### Main Interface
-![SecureCore Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Preview.jpg?raw=true)
+[SecureCore Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Preview.jpg?raw=true)
 </details>
 
 <details>
 <summary>🖼️ SecureCore Advanced version</summary>
 ### Main Interface
-![SecureCore Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Advanced_version_example.png?raw=true)
+[SecureCore Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Advanced_version_example.png?raw=true)
 </details>
 
 ## 🖼️ SecureCore simple version
