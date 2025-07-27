@@ -431,6 +431,15 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...
 - ✅ Comprehensive logging system
 - ✅ Windows file handling improvements
 
+### **v2.0.0** - Initial Release (Enhanced Version)
+
+- ✅ Military-Grade Security: Multiple cipher options including post-quantum resistant algorithms
+- ✅ Hardware Acceleration: Automatic detection and optimization for modern CPUs
+- ✅ Tamper Detection: HMAC integrity verification prevents unauthorized modifications
+- ✅ Future-Proof: Extensible architecture for new algorithms
+- ✅ Professional UI: Clean interface with advanced options for power users
+- ✅ Enterprise Ready: Comprehensive logging and status monitoring
+
 ---
 
 <div align="center">
