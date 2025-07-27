@@ -204,12 +204,13 @@ argon2-cffi>=23.1.0
 
 <details>
 <summary>🖼️ SecureCore simple version</summary>
-### Simple Interface
+## Simple Interface
 ![SecureCore Simple Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Preview.jpg?raw=true)   
 </details>
 
+<details>
 <summary>🖼️ SecureCore Advanced version</summary>
-### Advanced Interface
+## Advanced Interface
 ![SecureCore Advanced Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Advanced_version_example.png?raw=true)   
 </details>
 
