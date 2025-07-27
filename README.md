@@ -42,7 +42,7 @@ SecureCore is a professional-grade folder security application that provides mil
 
 ## 🔐 SecureCore - Advanced version System
 <details>
-<summary>c</summary>
+<summary>Advanced version System</summary>
 ## Advanced version System
 
 Military-grade multi-cipher encryption with integrity verification and advanced security features.
