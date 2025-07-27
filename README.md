@@ -42,13 +42,185 @@ SecureCore is a professional-grade folder security application that provides mil
 
 ---
 
-## 📸 Screenshots
+<details>
+<summary>SecureCore - Advanced version</summary>
+# 🔐 SecureCore - Advanced version System
 
-### Main Interface
-![SecureCore Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Preview.jpg?raw=true)
+Military-grade multi-cipher encryption with integrity verification and advanced security features.
+
+## 🛡️ Security Profiles & Cipher Recommendations
+
+Choose the right security profile for your needs:
+
+### 🥇 Tier 1: The Modern Gold Standard
+**Profile Name:** Balanced & Recommended  
+**Configuration:** AES-256-GCM + Scrypt
+
+🔹 **Strength:** The ideal choice for most users. AES-GCM is the industry standard for high-performance, authenticated encryption. It's not only fast (often accelerated by your CPU's hardware) but also includes built-in integrity and authenticity checks, meaning it protects against both eavesdropping and tampering. Scrypt is a memory-hard KDF, which makes it extremely resistant to brute-force password guessing attacks using specialized hardware like GPUs or ASICs.
+
+🔹 **Security Power:** Excellent. This combination protects your data with a top-tier modern cipher and shields your password with a KDF designed to defeat well-funded attackers. It's the go-to choice for strong, everyday security.
+
+🔹 **Best For:** Virtually all users and general-purpose file and folder encryption.
 
 ---
 
+### 🏰 Tier 2: The Fortress
+**Profile Name:** Maximum Paranoid / Future-Proof  
+**Configuration:** AES-256-GCM + Argon2
+
+🔹 **Strength:** This pairing offers the highest level of security available in the application. While AES-GCM remains the cipher of choice, Argon2 is the current state-of-the-art KDF and the winner of the international Password Hashing Competition. It was specifically designed to be resilient against an even wider array of attacks than Scrypt, including trade-off attacks where an attacker uses more memory to reduce computation time.
+
+🔹 **Security Power:** Exceptional. This is the strongest defense you can mount to protect your password. If you are protecting extremely sensitive data or are concerned about advances in computing power over the next decade, this is the combination to use.
+
+⚠️ **Note:** Requires the `argon2-cffi` library to be installed.
+
+🔹 **Best For:** Protecting nation-state level secrets, cryptographic keys, financial data, or for users who simply want the most robust security possible.
+
+---
+
+### ⚡ Tier 3: The Sprinter
+**Profile Name:** High-Speed & Efficient  
+**Configuration:** ChaCha20-Poly1305 + PBKDF2-SHA512
+
+🔹 **Strength:** This profile prioritizes performance. ChaCha20-Poly1305 is a modern, authenticated cipher that is extremely fast, especially on platforms without dedicated AES hardware acceleration. It is a leading alternative to AES-GCM and is used by major tech companies like Google. PBKDF2-SHA512 is a very strong, time-tested KDF that is computationally expensive but not memory-hard, making it much faster to compute than Scrypt or Argon2.
+
+🔹 **Security Power:** Very Strong & Fast. While PBKDF2 is theoretically more vulnerable to specialized hardware attacks than Scrypt/Argon2, it remains a formidable barrier. The encryption itself is top-tier. You are trading a fraction of theoretical KDF resilience for a significant gain in operational speed.
+
+🔹 **Best For:** Encrypting very large files (like multi-gigabyte video archives), running on older computers, or any situation where performance is the primary concern.
+
+---
+
+### 🔄 Tier 4: The Modern Alternative
+**Profile Name:** The Non-AES Path  
+**Configuration:** ChaCha20-Poly1305 + Scrypt
+
+🔹 **Strength:** This combination provides a security level equivalent to the "Modern Gold Standard" but uses a different family of cryptographic primitives. ChaCha20-Poly1305 offers excellent security and performance, and Scrypt provides the same memory-hard password protection. This is a great choice for cryptographic diversity.
+
+🔹 **Security Power:** Excellent. It is just as secure as the AES-GCM + Scrypt combination. Choosing between them is a matter of preference for the underlying mathematics, not a difference in practical security.
+
+🔹 **Best For:** Security-conscious users who prefer a robust and modern alternative to AES for any reason.
+
+---
+
+### 📜 Tier 5: The Classic (Legacy)
+**Profile Name:** Legacy & Compatibility  
+**Configuration:** AES-256-CBC + PBKDF2-SHA256
+
+🔹 **Strength:** This pairing represents a "classic" security stack from several years ago. AES-CBC is an older encryption mode that, while secure when implemented correctly (as it is here), is more difficult to use safely than modern modes like GCM. PBKDF2-SHA256 is the most widely adopted KDF standard. Our application ensures this combination is secure by adding a separate integrity check (HMAC) on top.
+
+🔹 **Security Power:** Robust and Widely Compatible. While not the absolute strongest combination offered, it is still very secure and represents a baseline that many older cryptographic tools can understand. The main reason to use this is for interoperability.
+
+🔹 **Best For:** Situations where you might need to decrypt the file on an older system or with a different tool that may not support the latest ciphersuites like GCM or Scrypt.
+
+## 🚀 Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### Requirements
+```
+customtkinter>=5.2.0
+cryptography>=41.0.0
+psutil>=5.9.0
+py-cpuinfo>=9.0.0
+argon2-cffi>=23.1.0
+```
+
+## 🎯 Features
+
+### 🔒 Advanced Encryption
+- **Multiple Cipher Support:** AES-256-GCM, AES-256-CBC, ChaCha20-Poly1305, AES-256-CTR, Hybrid-RSA-AES
+- **Robust Key Derivation:** PBKDF2-SHA256/SHA512, Scrypt, Argon2
+- **Integrity Verification:** Built-in HMAC authentication to detect tampering
+- **Compression:** Optional data compression to reduce file sizes
+
+### 🛡️ Security Features  
+- **Gutmann Secure Deletion:** 35-pass overwrite for complete data destruction
+- **Auto-Destruct Timer:** Automatic secure deletion after specified time
+- **Hardware Acceleration:** Automatic detection and use of AES-NI and AVX2 instructions
+- **Memory-Hard KDFs:** Protection against specialized hardware attacks
+
+### 🖥️ User Interface
+- **Modern GUI:** Dark-themed interface built with CustomTkinter
+- **Real-time Progress:** Live encryption/decryption progress tracking
+- **Hardware Detection:** Display of system capabilities and acceleration features
+- **Operation Logging:** Comprehensive status and operation history
+
+## 📖 Usage
+
+1. **Launch the application:**
+   ```bash
+   python SecureCore.py
+   ```
+
+2. **Select a folder** to encrypt using the Browse button
+
+3. **Choose your security profile:**
+   - Select encryption algorithm
+   - Choose key derivation function
+   - Set optional features (compression, auto-destruct)
+
+4. **Enter a strong password** (minimum 12 characters recommended)
+
+5. **Click "Encrypt with Enhanced Security"** to secure your folder
+
+6. **To decrypt:** Click "Decrypt & Verify Integrity" and select your .securecore file
+
+## ⚠️ Security Recommendations
+
+### 🔐 Password Guidelines
+- Use at least 12 characters (longer is better)
+- Include uppercase, lowercase, numbers, and symbols
+- Avoid dictionary words and personal information
+- Consider using a password manager
+
+### 🛡️ Best Practices
+- Always verify integrity after decryption
+- Store encrypted files in secure locations
+- Keep backups of important encrypted data
+- Use the highest security tier for sensitive data
+- Regularly update the application and dependencies
+
+## 🔧 Technical Details
+
+### Supported Algorithms
+- **AES-256-GCM:** Authenticated encryption with built-in integrity
+- **AES-256-CBC:** Classic block cipher with PKCS7 padding
+- **ChaCha20-Poly1305:** Modern stream cipher with authentication
+- **AES-256-CTR:** Counter mode for parallel processing
+- **Hybrid-RSA-AES:** RSA key exchange with AES encryption
+
+### Key Derivation Functions
+- **PBKDF2-SHA256/SHA512:** Industry standard with configurable iterations
+- **Scrypt:** Memory-hard function resistant to hardware attacks
+- **Argon2:** State-of-the-art winner of Password Hashing Competition
+
+
+</details>
+---
+
+## 📸 Screenshots
+
+<details>
+<summary>🖼️ SecureCore simple version</summary>
+### Main Interface
+![SecureCore Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Preview.jpg?raw=true)
+</details>
+
+<details>
+<summary>🖼️ SecureCore Advanced version</summary>
+### Main Interface
+![SecureCore Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Advanced_version_example.png?raw=true)
+</details>
+---
+
+## 🖼️ SecureCore simple version
 ## 🚀 Quick Start
 
 ### Prerequisites
