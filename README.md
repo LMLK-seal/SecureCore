@@ -40,9 +40,10 @@ SecureCore is a professional-grade folder security application that provides mil
 - **Real-time status monitoring** and logging
 - **Password visibility controls** for secure entry
 
-<details>
-<summary>SecureCore - Advanced version</summary>
 ## 🔐 SecureCore - Advanced version System
+<details>
+<summary>c</summary>
+## Advanced version System
 
 Military-grade multi-cipher encryption with integrity verification and advanced security features.
 
