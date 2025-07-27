@@ -439,6 +439,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy...
 - ✅ Future-Proof: Extensible architecture for new algorithms
 - ✅ Professional UI: Clean interface with advanced options for power users
 - ✅ Enterprise Ready: Comprehensive logging and status monitoring
+- ✅ Compression before encryption: for better performance.
 
 ---
 
