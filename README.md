@@ -40,6 +40,117 @@ SecureCore is a professional-grade folder security application that provides mil
 - **Real-time status monitoring** and logging
 - **Password visibility controls** for secure entry
 
+## 🔐 SecureCore - Advanced version System (Simple Version)
+<details>
+<summary>Advanced version System (Simple Version)</summary>
+## 🚀 Quick Start
+
+### Prerequisites
+```bash
+Python 3.8+
+Windows Operating System
+```
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/LMLK-seal/securecore.git
+   cd securecore
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   pip install customtkinter cryptography
+   ```
+
+3. **Run SecureCore:**
+   ```bash
+   python securecore.py
+   ```
+
+### Dependencies
+```
+customtkinter>=5.2.0
+cryptography>=41.0.0
+```
+
+---
+
+## 📖 Usage Guide
+
+### 🔒 **Encrypting a Folder**
+
+1. **Launch SecureCore** and click "Browse" to select your target folder
+2. **Enter a strong password** (minimum 8 characters recommended)
+3. **Optional:** Enable auto-destruct timer with custom duration
+4. **Click "Encrypt & Secure Folder"** - original folder will be securely deleted
+5. **Encrypted file** saved as `[FolderName].secure`
+
+### 🔓 **Decrypting a Folder**
+
+1. **Click "Decrypt & Access Folder"**
+2. **Select the `.secure` file** you want to decrypt  
+3. **Enter the correct password** used during encryption
+4. **Choose destination folder** for decrypted contents
+5. **Access your restored files** in the selected location
+
+### ⏱️ **Auto-Destruct Timer**
+
+- **Enable the checkbox** in Security Settings
+- **Set duration** in hours and minutes
+- **Timer starts** immediately after successful encryption
+- **Automatic deletion** occurs using Gutmann method when timer expires
+- **Status monitoring** shows remaining time and active timers
+
+---
+
+## 🔧 Technical Specifications
+
+### **Encryption Details**
+| Component | Specification |
+|-----------|---------------|
+| **Algorithm** | AES-256-CBC |
+| **Key Derivation** | PBKDF2-HMAC-SHA256 |
+| **Iterations** | 100,000 |
+| **Salt Length** | 128-bit (16 bytes) |
+| **IV Length** | 128-bit (16 bytes) |
+| **Padding** | PKCS7 |
+
+### **Secure Deletion**
+| Method | Details |
+|--------|---------|
+| **Standard** | Gutmann 35-pass method |
+| **Patterns** | Random + Specific bit patterns |
+| **Compliance** | DoD 5220.22-M compatible |
+| **File Sync** | Force write to disk after each pass |
+
+### **Security Features**
+- ✅ **No plaintext password storage**
+- ✅ **Cryptographically secure random generation**
+- ✅ **Memory-safe operations**
+- ✅ **Comprehensive audit logging**
+- ✅ **Thread-safe timer operations**
+
+---
+
+## 📊 System Requirements
+
+### **Minimum Requirements**
+- **OS:** Windows 10/11 (64-bit)
+- **Python:** 3.8 or higher
+- **RAM:** 512 MB available memory
+- **Storage:** 50 MB free disk space
+- **Dependencies:** CustomTkinter, Cryptography
+
+### **Recommended Requirements**
+- **OS:** Windows 11 (64-bit)
+- **Python:** 3.10+ 
+- **RAM:** 2 GB available memory
+- **Storage:** 1 GB free disk space (for temporary operations)
+- **Processor:** Multi-core CPU for faster encryption
+</details>
+
 ## 🔐 SecureCore - Enhanced version System
 <details>
 <summary>Enhanced version System</summary>
@@ -217,115 +328,6 @@ argon2-cffi>=23.1.0
 ![Enhanced Main Interface](https://github.com/LMLK-seal/SecureCore/blob/main/Advanced_version_example.png?raw=true)
 
 </details>
-
-
-## 🖼️ SecureCore
-## 🚀 Quick Start
-
-### Prerequisites
-```bash
-Python 3.8+
-Windows Operating System
-```
-
-### Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/LMLK-seal/securecore.git
-   cd securecore
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install customtkinter cryptography
-   ```
-
-3. **Run SecureCore:**
-   ```bash
-   python securecore.py
-   ```
-
-### Dependencies
-```
-customtkinter>=5.2.0
-cryptography>=41.0.0
-```
-
----
-
-## 📖 Usage Guide
-
-### 🔒 **Encrypting a Folder**
-
-1. **Launch SecureCore** and click "Browse" to select your target folder
-2. **Enter a strong password** (minimum 8 characters recommended)
-3. **Optional:** Enable auto-destruct timer with custom duration
-4. **Click "Encrypt & Secure Folder"** - original folder will be securely deleted
-5. **Encrypted file** saved as `[FolderName].secure`
-
-### 🔓 **Decrypting a Folder**
-
-1. **Click "Decrypt & Access Folder"**
-2. **Select the `.secure` file** you want to decrypt  
-3. **Enter the correct password** used during encryption
-4. **Choose destination folder** for decrypted contents
-5. **Access your restored files** in the selected location
-
-### ⏱️ **Auto-Destruct Timer**
-
-- **Enable the checkbox** in Security Settings
-- **Set duration** in hours and minutes
-- **Timer starts** immediately after successful encryption
-- **Automatic deletion** occurs using Gutmann method when timer expires
-- **Status monitoring** shows remaining time and active timers
-
----
-
-## 🔧 Technical Specifications
-
-### **Encryption Details**
-| Component | Specification |
-|-----------|---------------|
-| **Algorithm** | AES-256-CBC |
-| **Key Derivation** | PBKDF2-HMAC-SHA256 |
-| **Iterations** | 100,000 |
-| **Salt Length** | 128-bit (16 bytes) |
-| **IV Length** | 128-bit (16 bytes) |
-| **Padding** | PKCS7 |
-
-### **Secure Deletion**
-| Method | Details |
-|--------|---------|
-| **Standard** | Gutmann 35-pass method |
-| **Patterns** | Random + Specific bit patterns |
-| **Compliance** | DoD 5220.22-M compatible |
-| **File Sync** | Force write to disk after each pass |
-
-### **Security Features**
-- ✅ **No plaintext password storage**
-- ✅ **Cryptographically secure random generation**
-- ✅ **Memory-safe operations**
-- ✅ **Comprehensive audit logging**
-- ✅ **Thread-safe timer operations**
-
----
-
-## 📊 System Requirements
-
-### **Minimum Requirements**
-- **OS:** Windows 10/11 (64-bit)
-- **Python:** 3.8 or higher
-- **RAM:** 512 MB available memory
-- **Storage:** 50 MB free disk space
-- **Dependencies:** CustomTkinter, Cryptography
-
-### **Recommended Requirements**
-- **OS:** Windows 11 (64-bit)
-- **Python:** 3.10+ 
-- **RAM:** 2 GB available memory
-- **Storage:** 1 GB free disk space (for temporary operations)
-- **Processor:** Multi-core CPU for faster encryption
 
 ---
 
